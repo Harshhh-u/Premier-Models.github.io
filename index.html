@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+    <style>
+        :root{
+            --font: Poppins;
+            --font2: Orbitron;
+            --font3: Libre Baskerville;
+            --font4: Cinzel;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .header-main{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            flex-direction: row;
+        }
+        .header-main ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+        }
+        .header-main a,li{
+           text-decoration: none;
+           margin: 15px;
+           display: inline-block;
+           flex-direction: column-reverse;
+           color: aliceblue;
+           font-family: orbitron;
+        }
+        .header-main a:hover{
+            color: yellow;
+            transition: ease-in-out 0.45s;
+            text-decoration: underline;
+        }
+        .main-container{
+            background: linear-gradient(
+                rgba(0,0,0,0.97),
+                rgba(0,0,0,0.45)
+            ),
+            url('https://wallpapers.com/images/featured/bts-jung-kook-4v1eut7nmlo77ubw.jpg');
+            background-position-x: left;
+            background-attachment: scroll;
+            background-repeat: no-repeat;
+            background-size:cover;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+        .main-container div.text1{
+            color: rgb(255, 255, 255);
+            font-family: orbitron;
+            text-transform:uppercase;
+            font-size: 150px;
+            position: relative;
+            top: 180px;
+            text-align: end;
+            padding-top: 140px;
+               
+        }
+        .main-container div.text1 > span{
+            color: bisque;
+            text-align: left;
+            position: absolute;
+            bottom: 150px;
+
+            
+        }
+        .main-container div.text1 > span:hover{
+            color: rgb(239, 239, 104);
+            transition: all 1s;
+        }
+        .main-content{
+            background-color: beige;
+            height: 300px;
+            margin: 50px 100px 50px 100px;
+        }
+        .content-area mark{
+            font-size: 80px;
+            text-transform: uppercase;
+            color: white;
+            background: rgb(183, 183, 152);
+            position: relative;
+            bottom: 48px;
+            left: 500px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            
+        }
+        .content-area mark:hover{
+            background-color: rgb(255, 255, 255);
+            color: rgb(7, 17, 74);
+            text-decoration-color: rgb(225, 137, 74);
+            transition: ease-in-out 3.1s;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+        }
+        .menu-context h1{
+          color: black;  
+          font-size: 60px;
+          font-family: poppins;
+          text-transform: uppercase;
+          float: right;
+          background-color: beige;
+          border-radius: 4px 40px 40px;
+        }
+        .song-kang-trending img{
+            box-shadow: 40px 4px  8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+            position: relative;
+            bottom: 450px;
+        }
+        .menu-context p#song-kang{
+        font-size: 80px;
+        position: relative;
+        bottom: 10px;
+        left: 490px;
+        text-transform: uppercase;
+        text-shadow: 25px 2px 3px rgba(0, 0, 0, 0.11);;
+    
+        font-weight: 700;
+        }
+        .menu-context p#paragraph-song-kang{
+        font-size: 48px;
+        text-transform: capitalize;
+        position: relative;
+        left: 490px;
+        top: -120px;
+        }
+        .menu-context p#paragraph-song-kang strong{
+        font-size: 150px;
+        }
+        .main-content .clothes-items#item1{
+        
+        height: 450px;
+        width: 280px;
+        float: left;
+        margin: 0 60px 0 0;
+        }
+        .main-content .clothes-items2#item2{
+        
+        height: 450px;
+        width: 280px;
+        float: left;
+        margin: 0 60px 0 0;
+        
+        }
+        .main-content .clothes-items3#item3{
+        
+        height: 450px;
+        width: 280px;
+        float: left;
+        }
+        .main-content .clothes-items4#item4{
+        
+        height: 450px;
+        width: 280px;
+        float: right;
+        }
+        .main-content .song-kang-trending img:hover{
+           transition: 0.9s all ease-in-out;
+           transform: scale(1.1); 
+
+        }
+        .main-content .clothes-items#item1{
+            font-size: 40px;
+            text-transform: uppercase;
+            font-family: orbitron;
+            position: relative;
+            top: -390px;
+            box-shadow: 15px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+            
+        }
+        .main-content .clothes-items2#item2{
+            font-size: 40px;
+            text-transform: uppercase;
+            font-family: orbitron;
+            position: relative;
+            top: -390px;
+            box-shadow: 15px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+            
+        }
+        .main-content .clothes-items3#item3{
+            font-size: 40px;
+            text-transform: uppercase;
+            font-family: orbitron;
+            position: relative;
+            top: -390px;
+            box-shadow: 15px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+        }
+        .main-content .clothes-items4#item4{
+            font-size: 40px;
+            text-transform: uppercase;
+            font-family: orbitron;
+            position: relative;
+            top: -390px;
+            box-shadow: 15px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+        }
+        .main-content .clothes-items#item1 img:hover{
+            transition: 1.3s all ease-in-out;
+           transform: scale(1.1); 
+           z-index: 1;
+        }
+        .main-content .clothes-items2#item2 img:hover{
+            transition: 1.3s all ease-in-out;
+           transform: scale(1.1);
+        }
+        .main-content .clothes-items3#item3 img:hover{
+            transition: 1.3s all ease-in-out;
+           transform: scale(1.1);
+        }
+        .main-content .clothes-items4#item4 img:hover{
+            transition: 1.3s all ease-in-out;
+            transform: scale(1.1);
+        }
+        .main-content .our-shop, a{
+            font-family: var(--font4);
+            
+            
+        }
+        .main-content .some-trending-models strong{
+            color: rgb(208, 0, 0);
+            font-size: 45px;
+            position: relative;
+            top: -430px;
+            left: 500px;
+            text-transform: uppercase;
+        }
+        .main-content .shop-corner hr{
+           
+            
+        }
+        .dropdown{
+          position: relative;
+          display: inline-block;
+          display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+        }
+        .dropdown a{
+          color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+        }
+        .dropdown:hover:hover{
+          display: block;
+        }
+
+    </style>
+<body>
+    <div class="main-container">
+        <div class="wrapper">
+            <div class="header-main">
+                <div class="navbar">
+                  <a href=""> <img src="harsh-high-resolution-logo-transparent.png" alt="header-main-logo" width="85px"></a> 
+                </div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <div class="dropdown">
+                      <a href="#1">item 1</a>
+                      <a href="#1">item 2</a>
+                      <a href="#1">item 3</a>
+                      <a href="#1">item 4</a>
+                    </div>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about us">About us</a></li>
+                    <li><a href="Contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text1"><span>be</span>stylish</div>
+    </div>
+    <div class="main-content">
+        <div class="content-area">
+            <mark>trending</mark>
+        </div>
+        <div class="menu-context">
+            <h1>models <br> online <br> fashion <br> Shop</h1>
+            <p id="song-kang">song kang</p>
+            <p id="paragraph-song-kang"><mark>Confidence </mark><strong>,</strong><br>if you've it then <br> you can <mark> achieve </mark>anything </p>
+       </div>
+       <div class="song-kang-trending">
+        <img src="https://assets-metrostyle.abs-cbn.com/prod/metrostyle/attachments/191a4acb-2ecd-4959-a1e3-793fce305027_song%20kang%20holds%20a%20fan%20meet%20with%20netflix%202.jpg" height="600" alt="">
+        
+       </div>
+       <div class="some-trending-models">
+        <strong>Trending Fashion Stars <i class="fa-solid fa-arrow-trend-up"></i></strong>
+       </div>
+      <div class="clothes-items" id="item1">kim Tae
+        <img src="https://w0.peakpx.com/wallpaper/862/205/HD-wallpaper-bts-v-bts-bts-v.jpg"  width="280px" height="410">
+      </div> 
+      <div class="clothes-items2" id="item2">Zayn 
+        <img src="https://image-prod.iol.co.za/resize/1456x145600/?source=https://xlibris.public.prod.oc.inl.infomaker.io:8443/opencontent/objects/fe9357a3-4aff-5312-8867-332ea456d0da&operation=CROP&offset=0x0&resize=500x750"  width="280px" height="410"alt="">
+      </div>
+      <div class="clothes-items3" id="item3">Manu Rios
+        <img src="https://media.wonderlandmagazine.com/uploads/2022/02/1G2A0210-scaled.jpg"  width="280px" height="410px">
+      </div>
+      <div class="clothes-items4" id="item4">Song Kang
+        <img src="https://i.pinimg.com/564x/2e/61/ab/2e61abdd4321c9787b53c2600cc2361d.jpg"  width="280px" height="410px">
+      </div>
+      <div class="shop-corner">
+        <hr>
+      </div>
+    </div>
+</body>
+</html>

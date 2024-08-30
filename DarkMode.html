@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode</title>
+    <script src="DarkMode.js" defer></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            padding: 20px 45px;
+            
+        }
+        .container h1{
+        border: 2px solid rgb(6, 100, 200);
+        padding: 25px;
+        margin-top: 18px;
+       }
+       .full-dark-mode h1{
+        padding: 15px;
+       
+       }
+       body.dark{
+        background-color: rgba(0, 0, 0, 0.964);
+        color: aliceblue;
+       }
+       .container.dark{
+        background-color: rgba(0, 0, 0, 0.964);
+        color: aliceblue;
+        border: white;
+       }
+       .container{
+        background-color: rgb(255, 255, 255);
+        color: black;
+        
+       }
+    </style>
+</head>
+<body>
+    
+    <div class="full-dark-mode">
+        <label for="full-dark-mode">Full Dark Mode</label>
+        <input type="checkbox" id="full-dark-mode">
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, ducimus.</h1>
+    </div>
+    <div class="contained-dark-mode">
+        <label for="contained-dark-mode">Contained Dark Mode</label>
+        <input type="checkbox" id="contained-dark-mode">
+        <div class="container">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, accusantium!</h1></div>
+   
+    </div>
+
+</body>
+</html>

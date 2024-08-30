@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html,body{
+        height: 100%;
+        width: 100%;
+    }
+    #main{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 0px 90px;
+        padding-top: 150px;
+    }
+    #left{
+        height: 100%;
+        width: 48%;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #left h1{
+        font-size: 120px;
+        line-height: 110px;
+        font-weight: 500;
+    }
+    #bottom-left{
+        height: 40%;
+        width: 100%;
+        
+       
+    }
+    #color{
+        border: 1px solid #000;
+        border-radius: 50px;
+        width: fit-content;
+        padding: 10px 15px;
+        display: flex;
+        justify-content: space-between;
+
+        
+    }
+    #color h5{
+        font-size: 20px;
+        margin-right: 10px;
+        font-weight: 500;
+    }
+    #color1{
+        height: 20px;
+        width: 20px;
+        background-color: burlywood;
+        border-radius: 50%;
+    }
+    #color2{
+        height: 20px;
+        width: 20px;
+        background-color: brown;
+        border-radius: 50%;
+    }
+    #left h2{
+        font-size: 30px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+
+    }
+    #left p{
+        font-size: 20px;
+        width: 90%;
+        font-weight: 600;
+        color: #444;
+        line-height: 32px;
+    }
+    #right{
+        height: 90%;
+        width: 28%;
+       
+        position: relative;
+    }
+    #right-top{
+        height: 30px;
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    #right-top h4{
+        font-size: 20px;
+        font-weight: 800;
+    }
+    #right-top h5{
+        font-size: 15px;
+        font-weight: 800;
+    }
+    #right-top h5 i{
+        color: goldenrod;
+    }
+    #right img{
+        width: 100%;
+        object-fit: cover;
+        height: 90%;
+    }
+    #black-circle{
+        height: 100px;
+        width: 100px;
+        background-color: rgb(3,3,7);
+        color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        right: -12%;
+        top: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #black-circle:hover{
+        background-color: #dbd8d8;
+        color: rgb(3,3,7);
+    }
+    #rotated{
+        position: absolute;
+        left: -100px; 
+        bottom: 50%;
+        rotate: 90deg;
+        font-weight: 500;
+    }
+   
+    #navbar{
+        height: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content:flex-end;
+        gap: 38px;
+        padding: 0 30px;
+        background-color: rgb(3,3,7);
+    }
+   
+    #navbar i{
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+        border-radius: 50%;
+        font-size: 20px;
+    }
+    #navbar a{
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 600;
+    }
+    #main{
+        margin-top: -100px;
+    }
+</style>
+<body>
+    <div id="main-nav">
+        <div id="navbar">
+
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About us</a>
+            <a href="#">Cart</a>
+            <a href="#"><i class="ri-shopping-cart-fill"></i></a>
+           </div>
+    </div>
+    <div id="main">
+        <div id="left">
+            <h1>a cotton <br> weave.</h1>  
+            <div id="bottom-left">
+                <div id="color">
+                    <h5>colors</h5>
+                    <a href=""><div id="color1"></div></a>
+                    <a href=""><div id="color2"></div></a>
+                </div>
+                <h2>Details</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, ratione magnam! Voluptatibus, accusantium repudiandae saepe incidunt sint perferendis ullam quam nobis nam iusto. Quia, amet? In impedit labore voluptates consequuntur.</p>
+            </div>
+        </div>
+        <div id="right">
+              <div id="right-top">
+                <h4>$488</h4>
+                <h5>Rating <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-half-s-fill"></i>
+                    </h5>
+              </div>  
+              <img src="https://images.unsplash.com/photo-1541216970279-affbfdd55aa8?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+              <div id="black-circle">
+                Add to bag
+              </div>
+              <h2 id="rotated">cotten twill scarf</h2>
+        </div>
+    </div>
+</body>
+</html>

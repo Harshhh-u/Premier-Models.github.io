@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number Game</title>
+    <script src="GuessTheNumber.js" defer></script>
+</head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            text-align: center;
+        }
+        input{
+            width: 120px;
+            margin-top: 10px;
+        }
+        button{
+            margin-top: 10px;
+            padding: 10px 16px;
+            background-color: black;
+            color: white;
+            border: 2px solid white;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .input-number{
+            font-size: 1.5rem;
+            width: 15rem;
+        }
+        .start-game-Btn button{
+            cursor: pointer;
+        }
+        .start-game-Btn:disabled{
+            cursor: not-allowed;
+            background-color: rgba(0, 0, 0, 0.79);
+        }
+        .submit-Btn:disabled{
+            cursor: not-allowed;
+            background-color: rgba(0, 0, 0, 0.79);
+        }
+    </style>
+<body>
+    <p>Enter a guess between 0 to 100</p>
+    <form action="">
+    <input class="input-number" type="number" placeholder="Enter a number" min="1" max="100" autofocus required>
+    <div>
+        <button class="submit-Btn" type="submit">Submit</button>
+        <button disabled type="button" class="start-game-Btn">Start Game</button>
+        <p class="user-Attempts">you have 5 attempts</p>
+    </div>
+</form>
+    <p class="userResult"></p>
+    <p class="all-guesses"></p>
+</body>
+</html>

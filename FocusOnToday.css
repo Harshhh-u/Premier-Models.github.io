@@ -1,0 +1,200 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    body{
+    background-color: rgba(72,163,0,0.07);
+    font-family: "poppins", "sans-serif" ;
+    box-sizing: border-box;
+    user-select: none;
+}
+.title{
+    font-size: 64px;
+    color: #48a300;
+    text-align: center;
+}
+.title span{
+    color: #61481c;
+}
+div{
+    display: block;
+}
+.main-container img{
+    vertical-align: middle;
+    margin-left: 13px;
+    
+}
+main{
+    margin: 16px;
+
+}
+.progress-label{
+    font-size: 14px;
+    margin-bottom: 8px;
+    
+}
+.main-container{
+    background-color: #FBFBFB;
+    max-width: 660px;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 32px 42px;
+    box-shadow: 0 0 10px 5px rgba(72,163,0,0.1);
+    
+
+}
+.progress-bar{
+    height: 25px;
+    background-color: rgba(72,163,0,0.1);
+    border-radius: 17px;
+    
+}
+.progress-value{
+    height: 25px;
+    background-color: #48a300;
+    border-radius: 17px;
+    width: 33.9%;
+    padding-left: 16px;
+    color:#FBFBFB;
+    font-size: 10px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+.show-error .error-label{
+    display: block;
+}
+p.error-label{
+    color: #ff5151;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 3px;
+    display: none;
+    
+}
+.completed .error-label{
+    display: block;
+}
+.goal-container{
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 17px;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 35px;
+}
+.custom-checkbox{
+    height: 24px;
+    width: 24px;
+    border: 2px solid rgba(97,72,28,0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    cursor: pointer;  
+}
+.full .progress-value{
+    color: #FBFBFB;
+}
+
+.completed .goal-input{
+    color: #48a300;
+    text-decoration-line: line-through;
+   
+}
+
+.completed .custom-checkbox{
+    background: #48a300;
+    border-color: #48a300;
+
+}
+
+.check-icon{
+    display: none;
+    position: relative;
+    left: -7px;
+}
+.completed .check-icon{
+    display: block;
+}
+.goal-input{
+    margin-left: 22px;
+    font-size: 16px;
+    outline: none;
+    align-self: stretch;
+    flex-grow: 1;
+}
+input.goal-input{
+    width: 100%;
+    border: none;
+}
+.goal-input::placeholder{
+    color: rgb(218, 218, 218);
+}
+
+p.text-line{
+    text-align: center;
+    margin-top: 40px;
+
+}
+p.creator{
+    font-size: 10px;
+    font-weight: 500;
+    text-align: center;
+    color: #858585;
+    margin-top: 15px;
+}
+.sun-svg{
+    animation: move 3s infinite;
+    transform: rotate(45deg);
+}
+
+@keyframes move{
+    0%{
+        transform: rotate(0deg);
+       
+    }
+    25%{
+        transform: rotate(360deg);
+    }
+    50%{
+        transform: matrix3d(360deg);
+    }
+   
+}
+
+@media (max-width: 768px) {
+    .title{
+        font-size: 32px;
+    }
+    img{
+        width: 2.2rem;
+        
+    }
+    .app-container {
+        padding: 16px 32px;
+      }
+      
+      .goal-container {
+        height: 64px;
+        margin-bottom: 24px;
+        border-radius: 12px;
+      }
+    
+      .custom-checkbox {
+        width: 20px;
+        height: 20px;
+      }
+      
+      .made-with {
+        margin-top: 32px;
+      }
+    
+      .progress-bar {
+        height: 24px;
+      }
+    }
+}

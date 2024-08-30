@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .dropdown{
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropbtn {
+    background-color: #00BFFF;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: aliceblue;
+        min-width: 110px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .dropdown-content a{
+        display: block;
+    }
+    .dropdown-content a:hover{
+        display: block;
+        background-color: #ddd;
+    }
+    .dropdown-content a:hover .dropbtn a:hover{
+        background-color: azure;
+        
+    }
+    .dropdown:hover  .dropdown-content{
+        display: block;
+        font-size: larger;
+        text-decoration: none;
+        
+    }
+.dropdown:hover .dropbtn:hover{
+    background-color: #3e8e41;
+    
+}
+
+</style>
+<body>
+    <h1>dropdown list</h1>
+    <div class="dropdown">
+        <button class="dropbtn">dropdown</button>
+        <div class="dropdown-content">
+            <a href="#">link1</a>
+            <a href="#">link2</a>
+            <a href="#">link3</a>
+            <a href="#">link4</a>
+        </div>
+    </div>
+</body>
+</html>

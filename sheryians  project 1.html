@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+    html,body {
+        height: 100%;
+        width: 100%;
+
+    }
+    #main{
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+        
+    }
+    #nav{
+        height: 80px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 30px;
+        padding: 0 30px;
+    }
+    #nav h4{
+        font-size: 20px;
+        font-weight: 900;
+    }
+    
+    #nav i{
+        color: white;
+        background-color: black;
+        padding: 10px;
+        border-radius: 50%;
+        font-size: 20px;
+    }
+    #center{
+       
+        width: 100%;
+       
+        padding: 40px 80px;
+    }
+    #center h1{
+        font-size: 80px;
+        font-weight: 500;
+        line-height: 85px;
+    }
+    #center-in{
+        height: 40%;
+        width: 100%;
+        margin-top: 50px;
+       
+        font-size: 23px;
+        font-weight: 500;
+        line-height: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #right{
+        width: 20%;
+    }
+    .elem{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 5px;
+        padding: 20px 0;
+        border-top: solid 2px black;
+    }
+    .elem a{
+        color: black;
+        text-decoration: none;
+        font-size: 22px;
+
+    }
+    .elem i{
+       font-size: 20px;
+       font-weight: 500;
+       opacity: 0;
+    }
+    .elem:hover i{
+        opacity: 1;
+    }
+    .elem:hover a{
+        text-decoration: underline;
+    }
+    #bottom{
+        height: 50%;
+        width: 100%;
+        background: url('https://images.unsplash.com/photo-1523673671576-35ff54e94bae?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        background-size: cover;
+        background-position: 0 40%;
+    }
+</style>
+<body>
+    <div id="main">
+        <div id="nav">
+            <h4>About</h4>
+            <h4>News</h4>
+            <h4>Cart</h4>
+            <i class="ri-shopping-cart-fill"></i>
+        </div>
+        <div id="center">
+            <h1>Lightly padded, <br> quality jacket in <br> recycled polyster.</h1>
+            <div id="center-in">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quaerat  <br>labore aperiam sunt, nesciunt tempore in alias facere quos porro dolore <br> eius ut sapiente aliquam voluptas quod iure voluptatem unde <br> ratione ipsam ad totam adipisci?</p>
+
+                <div id="right">
+                    <div class="elem">
+                        <a href="#">Add to cart </a>
+                        <i class="ri-arrow-right-up-line"></i>
+                    </div>
+                    <div class="elem">
+                        <a href="#">Product details</a>
+                        <i class="ri-arrow-right-up-line"></i>
+                    </div>
+                    <div class="elem">
+                        <a href="#">Shipping</a>
+                        <i class="ri-arrow-right-up-line"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bottom">
+        </div>
+    </div>
+</body>
+</html>

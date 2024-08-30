@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: black;
+        padding: 5vw;
+    }
+    button{
+        padding: 10px 20px;
+        background-color: transparent;
+        border: 2px solid cyan;
+        color: cyan;
+        font-size: 2rem;
+        position: relative;
+        overflow: hidden;
+    }
+    button::after{
+        content: "";
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: cyan;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) scale(0);
+        z-index: -1;
+        
+
+    }
+    button:hover::after{
+        transform: translate(-50%,-50%) scale(5);
+        transition: all linear 0.7s;
+        
+    }
+    button:hover{
+        color: black;
+        transition: all linear 0.5s;
+    }
+</style>
+
+<body>
+    <button>Start game</button>
+</body>
+</html>
